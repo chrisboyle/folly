@@ -1,0 +1,14 @@
+{% extends "pages/page.html" %}
+
+{% load mezzanine_tags %}
+
+{% block main %}
+{% endblock %}
+
+{% block nocontainer %}
+{{ block.super }}
+{% editable page.richtextpage.content %}
+{{ page.richtextpage.content|richtext_filters|safe }}
+{% endeditable %}
+
+{% endblock %}
