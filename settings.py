@@ -74,6 +74,10 @@
 #
 # BLOG_USE_FEATURED_IMAGE = True
 
+BLOG_URLS_DATE_FORMAT = 'month'
+
+COMMENTS_USE_RATINGS = False
+
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
 USE_SOUTH = True
@@ -98,7 +102,7 @@ MANAGERS = ADMINS
 # timezone as the operating system.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = None
+TIME_ZONE = "Europe/London"
 
 # If you set this to True, Django will use timezone-aware datetimes.
 USE_TZ = True
@@ -122,8 +126,7 @@ SITE_ID = 1
 USE_I18N = False
 
 # Make these unique, and don't share it with anybody.
-SECRET_KEY = "4243c51a-7964-4ea8-b075-259fdd4876a79897d395-8cd2-4b88-af40-78a81c30c1a57da2473b-55f7-471e-8a04-35e02826e8dd"
-NEVERCACHE_KEY = "f73ebee8-d58d-42a9-ae3d-fd768440a78f34af130e-3930-4239-9398-8b685a8b2faa534889f9-0fbf-4f89-9343-690c55d65206"
+#SECRET_KEY = "..."  # moved to local_settings.py
 
 # Tuple of IP addresses, as strings, that:
 #   * See debug comments, when DEBUG is true
@@ -158,9 +161,9 @@ FILE_UPLOAD_PERMISSIONS = 0644
 DATABASES = {
     "default": {
         # Add "postgresql_psycopg2", "mysql", "sqlite3" or "oracle".
-        "ENGINE": "django.db.backends.",
+        "ENGINE": "django.db.backends.sqlite3",
         # DB name or path to database file if using sqlite3.
-        "NAME": "",
+        "NAME": "dev.db",
         # Not used with sqlite3.
         "USER": "",
         # Not used with sqlite3.
@@ -309,23 +312,15 @@ DEBUG_TOOLBAR_CONFIG = {"INTERCEPT_REDIRECTS": False}
 # These settings are used by the default fabfile.py provided.
 # Check fabfile.py for defaults.
 
-# FABRIC = {
-#     "SSH_USER": "", # SSH username
-#     "SSH_PASS":  "", # SSH password (consider key-based authentication)
-#     "SSH_KEY_PATH":  "", # Local path to SSH key file, for key-based auth
-#     "HOSTS": [], # List of hosts to deploy to
-#     "VIRTUALENV_HOME":  "", # Absolute remote path for virtualenvs
-#     "PROJECT_NAME": "", # Unique identifier for project
-#     "REQUIREMENTS_PATH": "", # Path to pip requirements, relative to project
-#     "GUNICORN_PORT": 8000, # Port gunicorn will listen on
-#     "LOCALE": "en_US.UTF-8", # Should end with ".UTF-8"
-#     "LIVE_HOSTNAME": "www.example.com", # Host for public site.
-#     "REPO_URL": "", # Git or Mercurial remote repo URL for the project
-#     "DB_PASS": "", # Live database password
-#     "ADMIN_PASS": "", # Live admin user password
-#     "SECRET_KEY": SECRET_KEY,
-#     "NEVERCACHE_KEY": NEVERCACHE_KEY,
-# }
+FABRIC = {
+     "SSH_USER": "folly", # SSH username
+     "HOSTS": ['nova.chris.boyle.name'], # List of hosts to deploy to
+     "PROJECT_NAME": "folly", # Unique identifier for project
+     "REQUIREMENTS_PATH": "requirements/project.txt", # Path to pip requirements, relative to project
+     "LOCALE": "en_GB.UTF-8", # Should end with ".UTF-8"
+     "LIVE_HOSTNAME": "cbn2013.absurdity.org.uk", # Host for public site.
+     "REPO_URL": "git://github.com/chrisboyle/folly.git", # Git or Mercurial remote repo URL for the project
+}
 
 
 ##################
