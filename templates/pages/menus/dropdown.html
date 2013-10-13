@@ -31,6 +31,10 @@
 
 {% if branch_level == 1 %}
 <ul class="dropdown-menu">
+    <li{% if page.is_current_or_ascendant %} class="active"{% endif %}>
+        <a href="{{ page.get_absolute_url }}">{{ page.title }}</a>
+    </li>
+    <li class="divider"></li>
     {% for page in page_branch %}
     {% if page.in_menu %}
     <li{% if page.is_current_or_ascendant %} class="active"{% endif %}
