@@ -41,8 +41,9 @@ jQuery(function($) {
             editable = $(editable);
             // Position the editable area's edit link.
             var link = editable.next('.editable-link');
+            var left = editable.offset().left - link.outerWidth() - 1;
             link.offset({top: editable.offset().top,
-                left: editable.offset().left - link.outerWidth() - 1});
+                left: Math.max(0,left)});
             // Apply the editable area's overlay handler.
             var expose = {color: '#333', loadSpeed: 200, opacity: 0.9};
             var overlay = {expose: expose, closeOnClick: true, close: ':button', left: 'center', top: 'center'};
