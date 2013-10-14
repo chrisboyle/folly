@@ -30,6 +30,12 @@
   background-color: #8df;
   border-color: #8df;
 }
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  background-color: #8df;
+}
 .post-meta .tags {
   display: inline-block;
   margin-bottom: 0px;
@@ -57,4 +63,9 @@ footer {
 }
 .editable-highlight {
   z-index: -1 !important;
+}
+.blog-list-detail {
+  border-bottom: 1px solid #ade;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
 }
