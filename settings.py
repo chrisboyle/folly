@@ -78,6 +78,8 @@ BLOG_URLS_DATE_FORMAT = 'month'
 
 COMMENTS_USE_RATINGS = False
 
+FORMS_USE_HTML5 = True
+
 # If True, the south application will be automatically added to the
 # INSTALLED_APPS setting.
 USE_SOUTH = True
