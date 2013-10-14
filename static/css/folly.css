@@ -4,6 +4,10 @@
   margin-right: 2px;
   vertical-align: middle;
 }
+.hresume abbr[title], .hresume abbr[data-original-title] {
+   cursor: default;
+   border-bottom: none;
+}
 
 /* tweak bootstrap a bit */
 .site-info {
