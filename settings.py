@@ -248,6 +248,10 @@ INSTALLED_APPS = (
     #"mezzanine.mobile",
 )
 
+RICHTEXT_FILTERS = (
+    "homeblocks.blog.add_latest_post",
+)
+
 # List of processors used by RequestContext to populate the context.
 # Each one should be a callable that takes the request object as its
 # only parameter and returns a dictionary to add to the context.
