@@ -2,7 +2,7 @@
 <h2>
     <a href="{{ blog_post.get_absolute_url }}">{{ blog_post.title }}</a>
 </h2>
-<h6>
+<h6 class="post-meta">
     {% with blog_post.categories.all as categories %}
     {% if categories %}
     {% trans "in" %}
@@ -12,6 +12,17 @@
     {% endif %}
     {% endwith %}
     {% blocktrans with sometime=blog_post.publish_date|timesince %}{{ sometime }} ago{% endblocktrans %}
+    {% keywords_for blog_post as tags %}
+    {% if tags %}
+    {% spaceless %}
+    <span class="glyphicon glyphicon-tag"></span>
+    <ul class="list-inline tags">
+    {% for tag in tags %}
+    <li><a href="{% url "blog_post_list_tag" tag.slug %}">{{ tag }}</a></li>
+    {% endfor %}
+    </ul>
+    {% endspaceless %}
+    {% endif %}
 </h6>
 
 {% if settings.BLOG_USE_FEATURED_IMAGE and blog_post.featured_image %}
@@ -26,16 +37,6 @@
 
 {% block blog_post_list_post_links %}
 <p>
-    {% keywords_for blog_post as tags %}
-    {% if tags %}
-    {% trans "Tags" %}:
-    {% spaceless %}
-    {% for tag in tags %}
-    <a href="{% url "blog_post_list_tag" tag.slug %}" class="tag">{{ tag }}</a>
-    {% endfor %}
-    {% endspaceless %}
-    <br>
-    {% endif %}
     <a href="{{ blog_post.get_absolute_url }}">{% trans "read more" %}</a>
     /
     {% if settings.COMMENTS_DISQUS_SHORTNAME %}

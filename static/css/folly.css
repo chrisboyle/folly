@@ -21,6 +21,18 @@
 .navbar-collapse {
   max-height: none;
 }
+.pager li > a:hover,
+.pager li > a:focus {
+  background-color: #8df;
+  border-color: #8df;
+}
+.post-meta .tags {
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.post-meta .glyphicon-tag {
+  margin-left: 10px;
+}
 /* these are mezzanine's fault */
 .form-actions {
   background-color: transparent;

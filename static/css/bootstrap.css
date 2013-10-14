@@ -251,7 +251,7 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eeeeee;
+  border-top: 1px solid #88ddff;
 }
 .sr-only {
   position: absolute;
@@ -556,7 +556,7 @@ abbr.initialism {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  border-left: 5px solid #eeeeee;
+  border-left: 5px solid #aaddee;
 }
 blockquote p {
   font-size: 17.5px;
@@ -577,7 +577,7 @@ blockquote small:before {
 blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
-  border-right: 5px solid #eeeeee;
+  border-right: 5px solid #aaddee;
   border-left: 0;
 }
 blockquote.pull-right p,
@@ -3896,7 +3896,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   line-height: 1.428571429;
   text-decoration: none;
   background-color: #aaddee;
-  border: 1px solid #dddddd;
+  border: 1px solid #aaddee;
   margin-left: -1px;
 }
 .pagination > li:first-child > a,
@@ -3934,7 +3934,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .pagination > .disabled > a:focus {
   color: #999999;
   background-color: #aaddee;
-  border-color: #dddddd;
+  border-color: #aaddee;
   cursor: not-allowed;
 }
 .pagination-lg > li > a,
@@ -4005,7 +4005,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   display: inline-block;
   padding: 5px 14px;
   background-color: #aaddee;
-  border: 1px solid #dddddd;
+  border: 1px solid #aaddee;
   border-radius: 15px;
 }
 .pager li > a:hover,
