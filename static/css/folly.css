@@ -18,6 +18,9 @@
 .navbar-toggle {
   background-color: #428bca;
 }
+.navbar-collapse {
+  max-height: none;
+}
 /* these are mezzanine's fault */
 .form-actions {
   background-color: transparent;
