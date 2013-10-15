@@ -248,6 +248,7 @@ INSTALLED_APPS = (
     #"mezzanine.twitter",
     #"mezzanine.accounts",
     #"mezzanine.mobile",
+    "qualify_feed_links",
 )
 
 RICHTEXT_FILTERS = (

@@ -54,6 +54,17 @@ urlpatterns = patterns("",
 
     # url("^$", "mezzanine.blog.views.blog_post_list", name="home"),
 
+    # Intercept the feeds to qualify links
+    url("^blog/feeds/(?P<format>.*)/$",
+        "qualify_feed_links.views.feed", name="blog_post_feed"),
+    url("^blog/tag/(?P<tag>.*)/feeds/(?P<format>.*)/$",
+        "qualify_feed_links.views.feed", name="blog_post_feed_tag"),
+    url("^blog/category/(?P<category>.*)/feeds/(?P<format>.*)/$",
+        "qualify_feed_links.views.feed", name="blog_post_feed_category"),
+    url("^blog/author/(?P<username>.*)/feeds/(?P<format>.*)/$",
+        "qualify_feed_links.views.feed", name="blog_post_feed_author"),
+
+
     # MEZZANINE'S URLS
     # ----------------
     # ADD YOUR OWN URLPATTERNS *ABOVE* THE LINE BELOW.
