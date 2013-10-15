@@ -57,6 +57,9 @@
   abbr[title]:after {
     content: "";
   }
+  footer {
+    display: none;
+  }
 }
 /* these are mezzanine's fault */
 .form-actions {
