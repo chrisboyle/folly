@@ -40,8 +40,11 @@
   display: inline-block;
   margin-bottom: 0px;
 }
-.post-meta .glyphicon-tag {
+.post-meta .glyphicon {
   margin-left: 10px;
+}
+.post-meta a {
+  color: #2a6496;
 }
 /* these are mezzanine's fault */
 .form-actions {
