@@ -69,3 +69,17 @@ footer {
   margin-bottom: 30px;
   padding-bottom: 15px;
 }
+/* long words/links should wrap in comments */
+#comments .media, #comments .media-body {
+  overflow: visible;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+/* for deeply-nested comment threads on mobile, sacrifice threading for visibility */
+@media (max-width: 768px) {
+  #comments .media-body > p > a[href] {
+    max-width: 100%;
+    display: inline-block;
+    overflow: hidden;
+  }
+}
