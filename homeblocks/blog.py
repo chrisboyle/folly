@@ -10,12 +10,12 @@ def add_latest_post(content):
 
 	out = 'Error loading latest blog post'
 	posts = BlogPost.objects.published().select_related()
-	#try:
-	post = posts[0]
-	t = loader.get_template('homeblocks/latest_post.html')
-	out = t.render(Context({'blog_post':post}))
-	#except:
-	#	pass
+	try:
+		post = posts[0]
+		t = loader.get_template('homeblocks/latest_post.html')
+		out = t.render(Context({'blog_post':post}))
+	except:
+		pass  # show error
 
 	return content.replace(MAGIC, out)
 
