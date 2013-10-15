@@ -80,3 +80,13 @@ footer {
     overflow: visible;
   }
 }
+/* fixed nav is nice, but not on short screens */
+@media (max-height: 420px) {
+  .navbar-fixed-top {
+    position: static;
+    margin-bottom: -1px;
+  }
+  body {
+    padding-top: 0px;
+  }
+}
