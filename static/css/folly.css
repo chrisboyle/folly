@@ -46,6 +46,18 @@
 .post-meta a {
   color: #2a6496;
 }
+@media print {
+  a,
+  a:visited {
+    text-decoration: none;
+  }
+  a[href]:after {
+    content: "";
+  }
+  abbr[title]:after {
+    content: "";
+  }
+}
 /* these are mezzanine's fault */
 .form-actions {
   background-color: transparent;
@@ -71,6 +83,11 @@ footer {
   border-bottom: 1px solid #ade;
   margin-bottom: 30px;
   padding-bottom: 15px;
+}
+@media print {
+  #editable-toolbar, .editable-link {
+    display: none !important;
+  }
 }
 /* long words/links should wrap in comments */
 #comments .media, #comments .media-body {
