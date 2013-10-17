@@ -2,6 +2,14 @@
 
 {% load mezzanine_tags %}
 
+{% block extra_head %}
+{% if settings.ROOT_LINKS %}
+{% for rel, href in settings.ROOT_LINKS.items %}
+<link rel="{{ rel }}" href="{{ href }}" />
+{% endfor %}
+{% endif %}
+{% endblock %}
+
 {% block main %}
 {% endblock %}
 

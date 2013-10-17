@@ -272,6 +272,18 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     "folly_context.context_processors.site",
 )
 
+TEMPLATE_ACCESSIBLE_SETTINGS=(
+        "ACCOUNTS_VERIFICATION_REQUIRED", "BITLY_ACCESS_TOKEN",
+        "BLOG_USE_FEATURED_IMAGE", "COMMENTS_DISQUS_SHORTNAME",
+        "COMMENTS_NUM_LATEST", "COMMENTS_DISQUS_API_PUBLIC_KEY",
+        "COMMENTS_DISQUS_API_SECRET_KEY", "COMMENTS_USE_RATINGS",
+        "DEV_SERVER", "FORMS_USE_HTML5", "GRAPPELLI_INSTALLED",
+        "GOOGLE_ANALYTICS_ID", "JQUERY_FILENAME", "LOGIN_URL", "LOGOUT_URL",
+        "SITE_TITLE", "SITE_TAGLINE",
+        "ROOT_LINKS",
+    )
+
+
 # List of middleware classes to use. Order is important; in the request phase,
 # these middleware classes will be applied in the order given, and in the
 # response phase the middleware will be applied in reverse order.
