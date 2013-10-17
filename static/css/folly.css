@@ -113,3 +113,31 @@ footer {
     padding-top: 0px;
   }
 }
+
+/* glue: 0.2.9.1 hash: dd3cc7693e */
+.sprite-favicons-twitter,
+.sprite-favicons-steam,
+.sprite-favicons-stackoverflow,
+.sprite-favicons-plus,
+.sprite-favicons-play,
+.sprite-favicons-linkedin,
+.sprite-favicons-launchpad,
+.sprite-favicons-lastfm,
+.sprite-favicons-github,
+.sprite-favicons-facebook,
+.sprite-favicons-dreamwidth,
+.sprite-favicons-debian,
+.sprite-favicons-amazon{background-image:url('/static/media/uploads/20131017-favicons.png');background-repeat:no-repeat;display:inline-block;margin-right:2px;vertical-align:middle}
+.sprite-favicons-twitter{background-position:0px 0px;width:16px;height:16px;}
+.sprite-favicons-steam{background-position:-16px 0px;width:16px;height:16px;}
+.sprite-favicons-stackoverflow{background-position:0px -16px;width:16px;height:16px;}
+.sprite-favicons-plus{background-position:-16px -16px;width:16px;height:16px;}
+.sprite-favicons-play{background-position:-32px 0px;width:16px;height:16px;}
+.sprite-favicons-linkedin{background-position:-32px -16px;width:16px;height:16px;}
+.sprite-favicons-launchpad{background-position:0px -32px;width:16px;height:16px;}
+.sprite-favicons-lastfm{background-position:-16px -32px;width:16px;height:16px;}
+.sprite-favicons-github{background-position:-32px -32px;width:16px;height:16px;}
+.sprite-favicons-facebook{background-position:-48px 0px;width:16px;height:16px;}
+.sprite-favicons-dreamwidth{background-position:-48px -16px;width:16px;height:16px;}
+.sprite-favicons-debian{background-position:-48px -32px;width:16px;height:16px;}
+.sprite-favicons-amazon{background-position:0px -48px;width:16px;height:16px;}
