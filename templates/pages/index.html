@@ -2,6 +2,8 @@
 
 {% load mezzanine_tags %}
 
+{% block whole_meta_title %}{{ settings.SITE_TITLE }}{% endblock %}
+
 {% block extra_head %}
 {% if settings.ROOT_LINKS %}
 {% for rel, href in settings.ROOT_LINKS.items %}
