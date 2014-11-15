@@ -9,7 +9,8 @@
 <meta name="description" content="{% block meta_description %}{% endblock %}">
 <title>{% block whole_meta_title %}{% block meta_title %}{% endblock %}{% if settings.SITE_TITLE %} | {{ settings.SITE_TITLE }}{% endif %}{% endblock %}</title>
 <link rel="shortcut icon" href="{% static "media/uploads/favicon.png" %}">
-<link rel="author" href="http://{{ site.domain }}/" type="text/html">
+<meta name="theme-color" content="#aaddee">
+<link rel="author" href="https://{{ site.domain }}/" type="text/html">
 
 {% ifinstalled mezzanine.blog %}
 <link rel="alternate" type="application/rss+xml" title="RSS" href="{% url "blog_post_feed" "rss" %}">
