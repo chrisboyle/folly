@@ -7,3 +7,5 @@ local_settings.py
 local_secret.py
 /static/media/uploads
 /static/CACHE
+/last.commit
+/last.tar
