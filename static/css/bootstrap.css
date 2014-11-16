@@ -2734,7 +2734,7 @@ input[type="button"].btn-block {
   content: "\1f4f7";
 }
 .glyphicon-lock:before {
-  content: "\1f512";
+  content: "\e033";
 }
 .glyphicon-bell:before {
   content: "\1f514";
