@@ -120,6 +120,26 @@ footer {
   }
 }
 
+.cmb-resp-img {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
+.cmb-resp-img-4-3 {
+    padding-bottom: 75%;
+}
+.cmb-resp-img-16-9 {
+    padding-bottom: 56.25%;
+}
+.cmb-resp-img-1-1 {
+    padding-bottom: 100%;
+}
+.cmb-resp-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
 
 /* glue: 0.2.9.1 hash: dd3cc7693e */
 .sprite-favicons-twitter,
