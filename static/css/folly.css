@@ -124,6 +124,7 @@ footer {
     position: relative;
     height: 0;
     overflow: hidden;
+    background-color: #ade;
 }
 .cmb-resp-img-4-3 {
     padding-bottom: 75%;
